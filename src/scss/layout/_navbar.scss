@@ -1,0 +1,16 @@
+.navbar {
+	position: static;
+    border: 0;
+}
+.navbar-inverse {
+		background-image: none;
+		background-color:  #337ab7;
+	.navbar-brand {
+			color: #fff;
+			font-weight: 600;
+		}
+	.navbar-nav>li>a {
+			color: #fff;
+		}
+
+}
