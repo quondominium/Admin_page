@@ -4,4 +4,15 @@
 }
 .footer{
   height: 50px;
+  background: #222;
+  color: #fff;
+  
+  .container {
+  	padding-top: 15px;
+    padding-bottom: 15px;
+    
+    .text-center {
+    	margin: 0;
+    }
+  }
 }
