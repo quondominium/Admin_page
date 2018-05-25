@@ -27,7 +27,7 @@ $base: (
   'base-link-color':#39f,
   'base-font-size': 16px,
   'base-line-height': 1.2,
-  'base-font-family': unquote("SegoeUI, 'Segoe UI Light', Arial, Helvetica, sans-serif"),
+  'base-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
   'vertical-rhythm': '(map-get($base, base-line-height) * 1em)',
   'base-min-width': 320px
 );
