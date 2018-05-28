@@ -23,7 +23,7 @@
         </button>
         <a class="navbar-brand" href="#">Prechu Admin page</a>
       </div>
-      <div id="navbar" class="navbar-collapse collapse ">
+      <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><i class="glyphicon glyphicon-user"></i> Admin</a></li>
           <li><a href="#"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
@@ -36,29 +36,66 @@
       <aside class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
         <div class="panel panel-default">
           <div class="panel-heading">Pages</div>
-          <div class="panel-body"><a href="#home">Home</a></div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">Widgets</div>
-          <div class="panel-body"><a href="#home">Slider</a></div>
-          <div class="panel-body"><a href="#home">Mediacontent</a></div>
-        </div>        
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation" class="active"><a href="#">All</a></li>
+              <li role="presentation"><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>       
       </aside>
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-        <div class="tab-content">
-          <section role="tabpanel" class="title tab-pane pages active" id="pages">
-
-          </section>
-          <section role="tabpanel" class="title tab-pane home" id="home">
-
-          </section>
-          <section role="tabpanel" class="tab-pane slider active" id="slider">
-
-          </section>
-          <section role="tabpanel" class="tab-pane mediacontent" id="mediacontent">
-     
-          </section>
+      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">               
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <h1 class="heading">Pages</h1>
         </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <form>
+              <div class="form-group">
+                <input class="btn btn-default" type="submit" value="Add New">
+              </div>
+          </form>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+            <form action="#" method="get">
+                <div class="input-group">
+                    <input class="form-control" id="system-search" name="q" placeholder="Search pages" required>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <table class="table table-list-search table-hover">
+            <caption>
+              <h3>List of pages</h3>
+            </caption>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="dropdown">
+                  <a href="#">
+                    Home
+                    <ul class="page-hover dropdown-menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Preview</a></li>
+                    </ul>
+                  </a>
+                  </div>
+                </td>
+                <td>Admin</td>
+                <td>12-11-2011 11:11</td>
+              </tr>
+            </tbody>
+          </table>   
+        </div>     
       </div>
     </div>
   </div>
