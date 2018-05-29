@@ -49,30 +49,47 @@
         <h1 class="heading">Home</h1>
       </div>
         <form>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+        <div class="page-edit col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
             <div class="panel panel-default"> 
               <div class="panel-body darken">
                 <div class="form-group">
-                  <label for="TitleInput">Title</label>
-                  <input type="text" id="TitleInput" class="form-control" placeholder="Enter title here">
+                  <label for="titleInput">Title</label>
+                  <input type="text" id="titleInput" class="form-control" placeholder="Enter title here">
                 </div>
                 <div class="form-group">
-                  <label for="KeywordsInput">Keywords</label>
-                  <input type="text" id="KeywordsInput" class="form-control" placeholder="Enter comma separated words here">
-                  <span class="help-block">e.g.: store, news, blog</span>
+                  <label for="keywordsInput">Keywords</label>
+                  <input type="text" id="keywordsInput" class="form-control" placeholder="Enter comma separated words here">
+                  <span class="help-block">e.g.: store, news, blog etc.</span>
                 </div>
                 <div class="form-group">
-                  <label for="DescriptionInput">Description</label>
-                  <input type="text" id="DescriptionInput" class="form-control" placeholder="Enter page description here">
+                  <label for="descriptionInput">Description</label>
+                  <input type="text" id="descriptionInput" class="form-control" placeholder="Enter page description here">
                 </div>
                 <div class="form-group">
-                  <label for="PageContentInput">Main Content</label>
-                  <textarea id="PageContentInput" class="form-control" rows="4"></textarea>
+                  <label for="mainContentInput">Main Content</label>
+                  <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button class="btn" data-original-title="Bold - Ctrl+B"><i class="glyphicon glyphicon-bold"></i></button>
+                        <button class="btn" data-original-title="Italic - Ctrl+I"><i class="glyphicon glyphicon-italic"></i></button>
+                        <button class="btn" data-original-title="List"><i class="glyphicon glyphicon-list"></i></button>
+                        <button class="btn" data-original-title="URL"><i class="glyphicon glyphicon-arrow-right"></i></button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn" data-original-title="Align Right"><i class="glyphicon glyphicon-align-right"></i></button>
+                        <button class="btn" data-original-title="Align Center"><i class="glyphicon glyphicon-align-center"></i></button>
+                        <button class="btn" data-original-title="Align Left"><i class="glyphicon glyphicon-align-left"></i></button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn" data-original-title="Preview"><i class="glyphicon glyphicon-eye-open"></i></button>
+                        <button class="btn" data-original-title="Cancel"><i class="glyphicon glyphicon-trash"></i></button>
+                    </div>
+                  </div>
+                  <textarea id="mainContentInput" class="form-control" rows="7"></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="ImageUploadInput">Image Upload</label>
-                  <input type="file" id="ImageUploadInput">
-                  <span class="help-block">.jpg, .png, .svg file</span>
+                  <label for="imageUploadInput">Image Upload</label>
+                  <input type="file" id="imageUploadInput">
+                  <span class="help-block">Choose .jpg, .png or .svg file</span>
                 </div>
               </div>
               <div class="panel-footer clearfix darken">
@@ -80,7 +97,7 @@
               </div>
             </div>
           </div>
-        </form>                  
+        </form>           
       </div>
     </div>
   </div>
