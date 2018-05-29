@@ -46,40 +46,38 @@
       </aside>
       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">     
       <h1 class="heading">Home</h1>
-        <form> 
-          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
+        <form>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
             <div class="panel panel-default"> 
               <div class="panel-body darken">
-                <h2 class="heading">Main content</h2>
-                <label for="TitleInput">Title</label>
-                <input type="text" id="TitleInput" class="form-control" placeholder="Enter title here">
-                <label for="KeywordsInput">Keywords</label>
-                <input type="text" id="KeywordsInput" class="form-control" placeholder="Enter comma separated words here">
-                <span class="help-block">e.g.: store, news, blog</span>
-                <label for="DescriptionInput">Description</label>
-                <input type="text" id="DescriptionInput" class="form-control" placeholder="Enter page description here">
-                <label for="PageContentInput">Main Content</label>
-                <textarea id="PageContentInput" class="form-control" rows="4"></textarea>
-                <label for="ImageUploadInput">Image Upload</label>
-                <input type="file" id="ImageUploadInput">
-                <span class="help-block">.jpg, .png, .svg file</span>
+                <fieldset>
+                <legend><h2 class="heading">Main content</h2></legend>
+                <div class="form-group">
+                  <label for="TitleInput">Title</label>
+                  <input type="text" id="TitleInput" class="form-control" placeholder="Enter title here">
+                </div>
+                <div class="form-group">
+                  <label for="KeywordsInput">Keywords</label>
+                  <input type="text" id="KeywordsInput" class="form-control" placeholder="Enter comma separated words here">
+                  <span class="help-block">e.g.: store, news, blog</span>
+                </div>
+                <div class="form-group">
+                  <label for="DescriptionInput">Description</label>
+                  <input type="text" id="DescriptionInput" class="form-control" placeholder="Enter page description here">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="ImageUploadInput">Image Upload</label>
+                  <input type="file" id="ImageUploadInput">
+                  <span class="help-block">.jpg, .png, .svg file</span>
+                </div>
+                <button type="submit" class="btn btn-default">Publish</button>
+                </fieldset>
               </div>
             </div>
           </div> 
-          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading" data-toggle="collapse" data-target="#demo">
-                  Publish<span class="caret"></span>
-                </div>
-              <div id="demo" class="panel-body list-group collapse"> 
-                <a href="#" class="list-group-item">Preview</a>
-                <a href="#" class="list-group-item">Save Draft</a>
-              </div>
-              <div class="panel-footer">
-                <button type="submit" class="btn btn-default">Publish</button> 
-              </div> 
-            </div> 
-          </div>
         </form>                  
       </div>
     </div>
