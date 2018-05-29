@@ -50,8 +50,6 @@
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
             <div class="panel panel-default"> 
               <div class="panel-body darken">
-                <fieldset>
-                <legend><h2 class="heading">Main content</h2></legend>
                 <div class="form-group">
                   <label for="TitleInput">Title</label>
                   <input type="text" id="TitleInput" class="form-control" placeholder="Enter title here">
@@ -66,7 +64,8 @@
                   <input type="text" id="DescriptionInput" class="form-control" placeholder="Enter page description here">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" rows="4"></textarea>
+                  <label for="PageContentInput">Main Content</label>
+                  <textarea id="PageContentInput" class="form-control" rows="4"></textarea>
                 </div>
                 <div class="form-group">
                   <label for="ImageUploadInput">Image Upload</label>
@@ -74,7 +73,6 @@
                   <span class="help-block">.jpg, .png, .svg file</span>
                 </div>
                 <button type="submit" class="btn btn-default">Publish</button>
-                </fieldset>
               </div>
             </div>
           </div> 
