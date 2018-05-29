@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prechu's Sample Admin Page</title>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Prechu Admin page</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="glyphicon glyphicon-user"></i> Admin</a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">Pages</div>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation"><a href="index.html">All</a></li>
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>       
+      </aside>
+      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"> 
+            
+              <h1 class="heading">Home</h1>
+               <div class="panel panel-default">
+                        <form>  
+           <div class="panel-body">
+             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 class="heading">Main content</h2><hr>
+                <label for="TitleInput">Title</label>
+                <input type="text" id="TitleInput" class="form-control" placeholder="Input title here" required>
+                <label for="KeywordsInput">Keywords</label>
+                <input type="text" id="KeywordsInput" class="form-control" placeholder="Input comma separated words here" pattern="[,^]+" required>
+                <span id="KeywordsInputHelpBlock" class="help-block">e.g.: store, news, blog</span>
+                <label for="DescriptionInput">Description</label>
+                <input type="text" id="DescriptionInput" class="form-control" placeholder="Input page description here" required>
+                <label for="PageContentInput">Main Content</label>
+                <textarea id="PageContentInput" class="form-control" rows="4"></textarea>
+                <label for="ImageUploadInput">Image Upload</label>
+                <input type="file" id="ImageUploadInput">
+                <span id="ImageUploadInputHelp" class="help-block">.jpg, .png, .svg file</span>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button> 
+          </div>
+        </form>  
+       </div>                   
+      </div>
+    </div>
+  </div>
+  </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-center">Copyright ©</p>
+      </div>
+    </footer>
+  <script src="assets/js/vendor.min.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
