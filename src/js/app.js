@@ -53,3 +53,4 @@ $('div.dropdown').hover(function() {
 }, function() {
   $(this).find('ul.page-hover.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
+tinymce.init({ selector:'textarea' });
