@@ -1,14 +1,14 @@
-.page-edit{
-	.darken {
-		background-color: #f1f1f1;
-	}
-	.content .heading {
-		margin-top: 0;
-	}
-	.panel-footer {
-		border-top: 0;
-	}
+.content .heading {
+	margin-top: 0;
 }
-#mainContentInput {
+.darken {
+	background-color: #f1f1f1;
+}
+.inner {
+	box-shadow: none;
+	border: 0;
+}
+textarea {
 	resize: none;
 }
+
