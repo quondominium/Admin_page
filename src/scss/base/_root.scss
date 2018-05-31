@@ -1,4 +1,37 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.woff?te6qn3') format('woff');
+  font-weight: normal;
+}
 html, body {
   height: 100%;
   margin: 0;
 }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.icon-pencil:before {
+  content: "\e900";
+}
+.icon-cart:before {
+  content: "\e901";
+}
+.icon-computer:before {
+  content: "\e902";
+}
+ .decor-1 {
+  background: #5094f2;
+ }
+.decor-2 {
+  background: #d94748;
+ }
+ .decor-3 {
+  background: #ebbb11;
+ }

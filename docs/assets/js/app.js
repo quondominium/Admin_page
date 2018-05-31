@@ -47,5 +47,25 @@ $('div.dropdown').hover(function () {
     $(this).find('ul.page-hover.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 tinymce.init({ selector: '.tinymce' });
+$('.icp').iconpicker({
+    title: false,
+    defaultValue: false,
+    placement: 'inline',
+    collision: 'none',
+    hideOnSelect: false,
+    showFooter: false,
+    searchInFooter: true,
+    icons: [{
+        title: "icon-pencil",
+        searchTerms: ['icon-pencil']
+    }, {
+        title: "icon-cart",
+        searchTerms: ['icon-cart']
+    }, {
+        title: "icon-computer",
+        searchTerms: ['icon-computer']
+    }]
+
+});
 
 },{}]},{},[1]);
