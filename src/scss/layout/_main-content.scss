@@ -7,10 +7,21 @@
 .inner {
 	box-shadow: none;
 	border: 0;
+	border-bottom: 1px solid #737373;
+}
+.outer {
+	box-shadow: none;
+	border: 0;	
 }
 textarea {
 	resize: none;
 }
 .iconpicker-popover.popover {
-	width: 100%;
+	max-width: 100%;
+    width: auto;
+}
+.colorpicker {
+	height: 14px;
+    width: 24px;
+    padding: 0;
 }
